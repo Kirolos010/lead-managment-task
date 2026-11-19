@@ -203,8 +203,8 @@ Use the following credentials to explore the application:
 | Role    | Email                                          | Password   |
 | ------- | ---------------------------------------------- | ---------- |
 | Admin   | [admin@gmail.com](mailto\:admin@gmail.com)     | `12345678` |
-| Manager | [manager1@demo.com](mailto\:manager1@demo.com) | `password` |
-| Agent   | [agent01@demo.com](mailto\:agent01@demo.com)   | `password` |
+| Manager | [manager1@demo.com](mailto\:manager1@demo.com) | `12345678` |
+| Agent   | [agent01@demo.com](mailto\:agent01@demo.com)   | `12345678` |
 
 ---
 
@@ -232,6 +232,10 @@ php artisan test
 
 ```bash
 php artisan test --filter=LeadAssignmentTest
+php artisan test --filter=LeadBulkAssignmentTest
+php artisan test --filter=LeadEscalationTest
+php artisan test --filter=LeadAuthorizationTest
+php artisan test --filter=LeadConcurrencyTest
 ```
 
 ### Test Coverage
